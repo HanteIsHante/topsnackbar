@@ -1,0 +1,9 @@
+/**
+ * 签名相关信息
+ */
+ext.signing = [
+        storeFilePath: '/Users/woshihante/Demo-project/demo-project',
+        storePassword: '1234567',
+        keyAlias: 'Demo-Project',
+        keyPassword: '1234567',
+]
