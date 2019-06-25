@@ -1,8 +1,6 @@
 package com.example.mvvmproject
 
 
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 
 
 class Constant{

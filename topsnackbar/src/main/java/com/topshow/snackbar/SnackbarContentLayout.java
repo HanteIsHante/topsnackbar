@@ -15,26 +15,27 @@
  */
 package com.topshow.snackbar;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import androidx.annotation.RestrictTo;
-import androidx.core.view.ViewCompat;
-import android.widget.ImageView;
+import android.support.annotation.RestrictTo;
+import android.support.design.R;
+import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
  * @hide
  */
-@androidx.annotation.RestrictTo(LIBRARY_GROUP)
+@RestrictTo(LIBRARY_GROUP)
 public class SnackbarContentLayout extends LinearLayout implements
         BaseTransientBottomBar.ContentViewCallback {
     private TextView mMessageView;
-    private ImageView mActionView;
+    private android.widget.ImageView mActionView;
 
     private int mMaxWidth;
     private int mMaxInlineActionWidth;
@@ -63,7 +64,7 @@ public class SnackbarContentLayout extends LinearLayout implements
         return mMessageView;
     }
 
-    public ImageView getActionView() {
+    public android.widget.ImageView getActionView() {
         return mActionView;
     }
 

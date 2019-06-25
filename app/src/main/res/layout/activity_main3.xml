@@ -9,14 +9,6 @@
     android:orientation="vertical"
     android:gravity="center_vertical|center_horizontal"
     tools:context=".Main3Activity">
-
-
-    <com.polyak.iconswitch.IconSwitch
-            android:id="@+id/icon_switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:isw_icon_size="25sp"/>
-
     <Button
             android:id="@+id/bt_write"
             android:text="Write"
@@ -37,6 +29,7 @@
             android:track="@drawable/switch_custom_track_selector"/>
 
     <Button
+            android:layout_marginTop="40dp"
             android:id="@+id/show_snackbar"
             android:text="Toast"
             android:layout_width="wrap_content"
