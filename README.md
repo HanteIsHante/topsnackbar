@@ -1,4 +1,9 @@
 # topsnackbar
+
+
+[TOGO jitpack](https://jitpack.io/#HanteIsHante/topsnackbar/0.2.0)
+
+
 Step 1. Add the JitPack repository to your build file
 
 ```
