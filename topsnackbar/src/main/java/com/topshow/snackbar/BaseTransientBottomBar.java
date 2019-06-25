@@ -16,7 +16,7 @@
 
 package com.topshow.snackbar;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static com.topshow.snackbar.AnimationUtils.FAST_OUT_SLOW_IN_INTERPOLATOR;
 
 import android.animation.Animator;
@@ -28,14 +28,14 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import androidx.annotation.IntDef;
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-import androidx.annotation.RestrictTo;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.google.android.material.behavior.SwipeDismissBehavior;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import android.support.annotation.IntDef;
+import android.support.annotation.IntRange;
+import android.support.annotation.NonNull;
+import android.support.annotation.RestrictTo;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.SwipeDismissBehavior;
+import android.support.v4.view.ViewCompat;
+import android.support.v4.view.WindowInsetsCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -262,10 +262,10 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         // Make sure that we fit system windows and have a listener to apply any insets
         ViewCompat.setFitsSystemWindows(mView, true);
         ViewCompat.setOnApplyWindowInsetsListener(mView,
-                new androidx.core.view.OnApplyWindowInsetsListener() {
+                new android.support.v4.view.OnApplyWindowInsetsListener() {
                     @Override
-                    public androidx.core.view.WindowInsetsCompat onApplyWindowInsets(View v,
-                            WindowInsetsCompat insets) {
+                    public WindowInsetsCompat onApplyWindowInsets(View v,
+                                                                  WindowInsetsCompat insets) {
                         // Copy over the bottom inset as padding so that we're displayed
                         // above the navigation bar
                         v.setPadding(v.getPaddingLeft(), v.getPaddingTop(),
@@ -273,7 +273,6 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
                         return insets;
                     }
                 });
-
         mAccessibilityManager = (AccessibilityManager)
                 mContext.getSystemService(Context.ACCESSIBILITY_SERVICE);
     }

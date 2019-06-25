@@ -1,7 +1,7 @@
 package com.example.mvvmproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 
 class Main2Activity : AppCompatActivity() {
 
